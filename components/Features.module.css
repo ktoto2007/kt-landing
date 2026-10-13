@@ -1,0 +1,77 @@
+.features {
+  padding: var(--section-padding);
+  background: var(--color-surface);
+}
+
+.heading {
+  font-size: 2.25rem;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.subheading {
+  text-align: center;
+  color: var(--color-text-secondary);
+  margin-bottom: 48px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.card {
+  padding: 28px;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.cardTitle {
+  font-size: 1.125rem;
+  margin-bottom: 8px;
+}
+
+.cardText {
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .heading {
+    font-size: 1.75rem;
+  }
+}
+/* Планшет */
+@media (max-width: 900px) { /* ... */ }
+
+/* Мобильный */
+@media (max-width: 768px) { /* ... */ }
+
+/* Узкий мобильный */
+@media (max-width: 600px) { /* ... */ }
+.features {
+  position: relative;
+  padding-top: 80px;   /* место под абсолютный бейдж */
+}
+.badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
